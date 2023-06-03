@@ -33,6 +33,12 @@ $ gorpc --module example.com/golistic/eventing \
  --dest-path internal/grpc
 ```
 
+The `--source-path` flag is optional. If not provided, all `.proto` files will
+be included.
+
+The source-package must be loaded through Go modules. It works using Go
+workspaces.
+
 License
 -------
 
